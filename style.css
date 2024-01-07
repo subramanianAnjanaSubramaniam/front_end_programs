@@ -1,0 +1,31 @@
+.main-body{
+        background-color:lightslategray;
+        width:1000%;
+        height:800px;
+}
+
+body{
+        margin:0px;
+}
+.header{
+        width:700px;
+        height:130px;
+        background-color:dodgerblue;
+        margin-left:380px;
+        margin-top:50px;
+
+}
+.icon{
+      margin-left:280px;
+
+}
+.container{
+        width:700px;
+        height:650px;
+        background-color: white;
+}
+.text1{
+        font-size:x-large;
+        font-weight:bold;
+        color:dodgerblue;
+}

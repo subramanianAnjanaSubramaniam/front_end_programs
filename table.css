@@ -1,0 +1,28 @@
+.tablesize2{
+    width:400px;
+    height:200px;
+    float: left;
+}
+.imgsize2{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100px;
+    height:100px;
+}
+
+
+.imgsize1{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100px;
+    height:100px;
+}
+
+
+.tablesize1{
+    width:400px;
+    height:200px;
+    float:left;
+}

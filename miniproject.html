@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<link href="miniproject.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+    .hr-lines{
+  position: relative;
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: center;
+}
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 250px;
+  background:darkred;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 250px;
+  background:darkred;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.hr-lines p{
+  text-transform: uppercase;
+  color:darkred;
+}
+
+.hr-lines section{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 5rem;
+
+}
+nav{
+    width:100%;
+    height:70px;
+    background:darkred;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    position: sticky;
+    top:0;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav a:hover{
+    color:black;
+}
+nav button{
+    background-color: black;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+</style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <div class="container-fluid">
+     <div class="row">
+        <div class="col-md-12">
+              <div class="mainbody">
+                <nav class=" fixed-top">
+                    <h2 style="color: white;">News Daily</h2>
+                
+                    <a href ="http://127.0.0.1:5500/miniproject.html" >Home</a>
+                    <a href ="http://127.0.0.1:5500/pagination1.html">Wealth</a>
+                    <a href ="http://127.0.0.1:5500/politics.html">Politics</a>
+                    <a href ="http://127.0.0.1:5500/mutualfunds.html">Mutual Funds</a>
+                    <a href ="http://127.0.0.1:5500/tech.html">Tech</a>
+                    <a href="http://127.0.0.1:5500/loginpage.html">Sign In</a>
+                    <button type="button">Subscribe</button>
+                    
+                </nav>
+                
+              </div>
+        </div>
+     </div>
+  </div>
+  <div class="container mt-5"></div>
+  <div class="container mt-3"></div>
+  <div class="container mt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="sndbody"><img class="img1size" src="train.webp">
+            <p> <a href="#">Ayodhya: PM Modi inaugurates redeveloped railway station, flags off 8 trains.</a><br> Ayodhya (UP), Dec 30 (PTI) Prime Minister Narendra Modi on Saturday inaugurated the redeveloped Ayodhya railway station and flagged off two Amrit Bharat and six Vande Bharat trains, some virtually. He will also inaugurate an airport and lay the foundation stones for a slew of development projects for Utter pradesh.The Prime MInister highlighted the sense of service to the poor that underlie modern Amrit Bharat trains. “People who often travel long distances due to their work, and those who do not have that much income, are also entitled to modern facilities and comfortable travel.</p></div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="snd2body"><img src="covid.avif">
+                <p><a href="#">India records 841 new Covid cases.</a><br> India has logged 841 new cases of COVID-19, the highest in 227 days, while the number of active cases of the infection was recorded at 4,309, the health ministry said on Sunday.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="snd2body"><img width="200px" height="200px" src="colmd3.webp">
+            <p><a href="#">A top wrestler in India has returned two of her medals to highlight alleged sexual harassment of female athletes.</a><br>Vinesh Phogat, one of India's most decorated women wrestlers, left the prestigious awards on a roadside kerb after she was refused permission to meet Prime Minister Narendra Modi.</p></div>
+        </div>
+    </div>
+  </div>
+  <hr  style="height:2px;border-width:0;color:gray;background-color:gray">
+
+
+  <div class="container mt-2">
+    <div class="row">
+        <div class="col-md-12">
+            <table>
+                <div class="tablebody1">
+                  <tr>
+                    <th><a href="#">In India, 2023 will be remembered as the year we went to the Moon</a></th>
+                    <th>On 23 August, massive celebrations broke out across the country when Chandrayaan-3 touched down in the lunar south pole region - an area on the Moon's surface that no-one had reached before.With this, India also joined an elite club of countries to achieve a soft landing on the Moon, after the US, the former Soviet Union and China.</th>
+                    <th><img  width=200px height=150px src="chandrayan.webp"></th>
+                  </tr>
+                </div>
+            </table>
+        </div>
+    </div>
+  </div>
+  <hr style =" border-width:medium; width: 70%">
+
+
+   <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <table> 
+                <div class="tablebody1">
+                    <tr>
+                        <th><a href="#">CAPFs plant 3.55 cr saplings from 2020 to 2022; MHA asks for them to be geotagged</a></th>
+                        <th>The Union Ministry of Home Affairs has tasked personnel of the Central Armed Police Forces (CAPFs), including Assam Rifles and the NSG, to geotag all the saplings they planted as part of a tree planting drive that started in 2020 in their campuses and neighbourhoods across the country. They have been asked to upload details regarding the saplings on the Government Land Information System (GLIS) portal.</th>
+                        <th><img width="200px" height="150px"  src="crpf.webp"></th>
+                    </tr>
+                </div>
+            </table>
+
+        </div>
+      </div>
+   </div>
+   <hr style=" border-width:medium; width: 70%">
+
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table>
+                <div class="tablebody1">
+                    <tr>
+                        <th><a href="#">South Africa defeat India by an innings and 32 runs in first Test match at Centurion</a> </th>
+                        <th>Virat Kohli's defiant 76 failed to save India from being thrashed by an innings and 32 runs by South Africa in the first Test at Centurion. India lost seven second-innings wickets in the evening session as they were bowled out for just 131 in 34.1 overs.</th>
+                        <th><img width=200px height=150px src="cricket.jpg"></th>
+                    </tr>
+                </div>
+            </table>
+        </div>
+    </div>
+   </div>
+   <hr style=" border-width:medium; width: 70%">
+
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table>
+                <div class="tablebody1">
+                    <tr>
+                        <th> <a href="#">'Like a wow!' and other Indian social media hits of 2023</a></th>
+                        <th>From jubilation at India's global successes to confusion and amusement at social trends, these are the moments that united Indians - in celebration and indignation - this year.</th>
+                        <th><img  width=200px height=150px src="https://ichef.bbci.co.uk/news/976/cpsprodpb/E980/production/_132167795_gettyimages-1619028193-594x594.jpg.webp"></th>
+                    </tr>
+                </div>
+            </table>
+        </div>
+    </div>
+   </div>
+   <hr style=" border-width:medium; width: 70%">
+
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table>
+                <div class="tablebody1">
+                    <tr>
+                        <th><a href="#">India deploys three warships to Arabian Sea after attack on tanker</a></th>
+                        <th>India has said it is sending three warships to the Arabian Sea after a drone hit an "Israel-affiliated" merchant vessel off its western coast last week.</th>
+                        <th><img width=200px height=150px src="https://ichef.bbci.co.uk/news/976/cpsprodpb/9B2C/production/_132142793_gettyimages-1239357661-594x594.jpg.webp"></th>
+                    </tr>
+                </div>
+            </table>
+        </div>
+    </div>
+   </div>
+   <hr  style="height:2px;border-width:0;color:gray;background-color:gray">
+   <div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3">
+           <section>
+             <div>
+                <div>
+                    <h3>
+                        <span>
+                            <span>[</span>
+                            Trending Topics
+                            <span>]</span>
+                        </span>
+                    </h3>
+                </div>
+                <div class="alt2">
+                      <div>
+                        <button type ="button"><a href="#">Happy NewYear 2024 Wishes</a></button><br><br>
+                        <button type=button><a href="#">ISRO Xposat launch LIVE</a></button><br><br>
+                    
+                        <button type=button><a href="#">SBI PO Result 2023 Live </a></button><br><br>
+                    
+                        <button type=button><a href="#">UGC NET 2023 Answer Key Live</a></button><br><br>
+                    
+                        <button type=button><a href="#">Salaar Box office Collection</a></button><br><br>
+                    
+                        <button type=button><a href="#">UPSSSC PET Result 2023 Live</a></button><br><br>
+                        <button type=button><a href="#">New Zealand/ Bangladesh Score</a></button><br><br>
+                        <button type=button><a href="#">Budget 2024</a></button><br><br>
+                      </div>
+                    
+                </div>
+             </div>
+           </section>
+            
+        </div>
+        <div class="col-md-9">
+            <section>
+                <div>
+                    <h3 class="hr-lines"><span>Sports</span></h3>
+                </div>
+            </section>
+            <table>
+                <div >
+                    <tr>
+                        <th><img width=350px height=200px src="https://static.toiimg.com/thumb/imgsize-75764,msid-106453909,width-600,resizemode-4/106453909.jpg"></th>
+                        <th><img  width=350px height=200px src="https://static.toiimg.com/thumb/msid-106455042,imgsize-31362,width-400,resizemode-4/106455042.jpg"></th>
+                    </tr>
+                    <tr>
+                      <th class="sports"><a href="#">Watch: Virat Kohli smashes R Ashwin for a big hit as India go full throttle at nets on New Year's Day.</a></th>
+                        <th class="sports"><a href="#">'If I was New Zealand, I wouldn't even...'Steve waugh slams SA for naming depleted Test squard.</a></th>
+                    </tr>
+                    <tr>
+                        <td><p>NEW DELHI: Having suffered the heaviest defeat in South Africa in the first Test at Centurion, Team India went full throttle in the optional training session at the Newlands on New Year's Day in a bid to stage a fightback in the second and final Test starting Wednesday.</p></td>
+                        <td><p>NEW DELHI: Former Australia captain Steve Waughcriticized the International Cricket Council and major cricket boards, including the BCCI, for neglecting Test cricket.</p></td>
+                    </tr>
+                </div>
+            </table>
+        </div>
+            
+        </div>
+    </div>
+   </div>
+        
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="cricketsizing1">
+                    <img  width=250px height=150px src="https://static.toiimg.com/thumb/msid-106458585,imgsize-73622,width-400,resizemode-4/106458585.jpg">
+                    <p ><a href="#">'10 straight wins and then one bad day;"sunil gavasker sum up teams India's outstanding show in 2023.</a></p>
+                    <p class="p1">NEW DELHI: Legendary Indian cricketer Sunil Gavaskar hailed India's outstanding performance in the yesr gone by as he summed up the team's heartbreaking loss in the ODI World Cuo final as just one day after unbelivable 10 succcessive victories. </p>
+                </div>
+                
+           </div>
+           <div class="col-md-3">
+            <div class="cricketsizing1">
+                <img  width=250px height=150px src="https://c.ndtvimg.com/2021-11/mbkmmj7_justin-langer-afp_625x300_07_November_21.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605">
+                <p><a href="#">"Can't Consider Yourself Great Coach If...": Justin Langer On How LSG Owner Convinced Him To Join Franchise.</a></p>
+                <p class="p1">Former Australia opening batter Justin Langer will start his the Indian Premier League (IPL) 2024 following his appointment as head coach of the Lucknow Super Giants (LSG). Langer will replace Andy Flower who has joined Royal Challengers Bangalore (RCB) as head coach for the upcoming season. Under Flower, LSG reached the playoffs in back-to-back seasons since the franchise joined the league in 2022. Meanwhile, Langer was the head coach of the Australian team between 2018 and 2022, before being replaced by Andre McDonald.</p>
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="cricketsizing1">
+                <img  width=250px height=150px src="https://c.ndtvimg.com/2023-12/2dnlpelo_virat-kohli-afp_625x300_29_December_23.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605">
+                <p><a href="#">Virat Kohli's Simulation, Shreyas Iyer Faces... - India's Tactics For South Africa 2nd Test Revealed</a></p>
+                <p class="p1">Virat Kohli looked a million dollars as he did extensive simulation for South Africa's left-arm pacer Nandre Burger but Shreyas Iyer's problems seemed to continue while facing a barrage of short balls at nets on Monday. On the New Year's Day, it was business as usual for Kohli, who had an extended session lasting close to an hour. First, he was at the centre nets against bowlers and then he faced high-intensity throwdowns for about 20 to 25 minutes at outside nets. Kohli is known to come to nets with specific purpose and on Monday, it seemed he wanted to extensively bat against a left-arm pacer. Since the Indian team's pace bowling roster doesn't include a left-armer, a net bowler was summoned and Kohli faced a good 25 to 30 deliveries from him in between playing against Jasprit Bumrah, Mohammed Siraj, R Ashwin and Avesh Khan.</p>
+
+            </div>
+           </div>
+           <div class="col-md-3">
+            <div class="cricketsizing1">
+                <img width=250px height=150px src="https://i.ndtvimg.com/i/2016-06/venkatesh-prasad_650x400_41465389255.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605">
+                <p><a href="#">"Mandir Wahin Banne Wala...": India Great's Reply On 2024 Query Goes Viral.</a></p>
+                <p class="p1">Former Indian cricket team fast bowler Venkatesh Prasad conducted a Q&A session on his X (formerly known as Twitter) profile on Sunday and when asked about a prediction for 2024, he made a reference to the Ram temple that is under construction in Ayodhya, Uttar Pradesh. When a follower asked what he thinks will happen in 2024, he wrote - "Mandir wahin banne waala hai(The temple is going to be made there)". It was a reference to the consecration ceremony of the Ram Temple in Ayodhya on January 22.
+
+                </p>
+            </div>
+           </div>
+       </div>
+   </div>
+   <hr  style="height:2px;border-width:0;color:gray;background-color:gray">
+
+
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">previous</a></li>
+                <li class="page-item"><a class="page-link" href="http://127.0.0.1:5500/pagination1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="http://127.0.0.1:5500/politics.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="http://127.0.0.1:5500/mutualfunds.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="http://127.0.0.1:5500/tech.html">next</a></li>
+            </ul>
+        </div>
+    </div>
+   </div>
+   
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <footer class="footer">
+                <div class="footer-col">
+                    <h5>Keep Up To Date With News Daily!</h5>
+                    <table>
+                        
+                        <tr>
+                            <th><input class="inputcontent" type=text placeholder="enter your email"></th>
+                            <th><button  class="inputcontent" type=button>Subscribe</button></th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer-col-1">
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About  Us</a></li>
+                        <li><a href="#">Term Of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Follow Us: <a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-instagram"></i></a></a>
+
+                    </ul>
+                    
+                   
+                    <!-- <h4>Follow us</h4> -->
+                          
+                               
+                        
+                        
+                    
+                </div>
+                    
+                    
+                    
+                </div>
+                
+                    
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>           
+</body>
+</html>
